@@ -17,6 +17,8 @@ Modern SaaS interface with dashboard UI, pricing interactions, workflow tabs and
 
 **Highlights:** SaaS UI • Interactive Pricing • FAQ • Dashboard • Scroll Animations
 
+![NEXORA Preview](assets/nexora-preview.png)
+
 🔗 [Live Demo](https://milenmilanov.github.io/landing-page-portfolio/saas-landing-page/)  
 💻 [Source Code](https://github.com/milenmilanov/landing-page-portfolio/tree/main/saas-landing-page)
 
