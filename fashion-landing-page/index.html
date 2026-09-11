@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NOIR — Contemporary Streetwear</title>
+
+  <meta
+    name="description"
+    content="NOIR — A fictional premium streetwear landing page designed and developed by Milen Milanov."
+  >
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f0eb;
+      color: #111;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    /* HEADER */
+
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 28px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 10;
+      color: white;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 900;
+      letter-spacing: 5px;
+    }
+
+    nav {
+      display: flex;
+      gap: 35px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      transition: opacity 0.3s ease;
+    }
+
+    nav a:hover {
+      opacity: 0.55;
+    }
+
+    .menu-button {
+      display: none;
+      background: none;
+      border: 0;
+      color: white;
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.55)),
+        url("https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=2000&q=85")
+        center/cover no-repeat;
+
+      color: white;
+      display: flex;
+      align-items: flex-end;
+      padding: 8% 5%;
+    }
+
+    .hero-content {
+      max-width: 1000px;
+    }
+
+    .eyebrow {
+      font-size: 0.75rem;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(4rem, 10vw, 9rem);
+      line-height: 0.85;
+      letter-spacing: -6px;
+      text-transform: uppercase;
+      margin-bottom: 35px;
+    }
+
+    .hero-bottom {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .hero-description {
+      max-width: 400px;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    .button {
+      display: inline-block;
+      background: white;
+      color: black;
+      padding: 17px 30px;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: black;
+      color: white;
+    }
+
+    /* MARQUEE */
+
+    .marquee {
+      padding: 22px 0;
+      overflow: hidden;
+      background: #111;
+      color: white;
+      white-space: nowrap;
+    }
+
+    .marquee-content {
+      display: inline-block;
+      animation: marquee 18s linear infinite;
+      font-size: 0.75rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    /* COLLECTION */
+
+    section {
+      padding: 110px 5%;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 50px;
+      gap: 30px;
+    }
+
+    .section-number {
+      font-size: 0.7rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #777;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      text-transform: uppercase;
+      letter-spacing: -3px;
+      line-height: 0.95;
+    }
+
+    .section-header p {
+      max-width: 390px;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .product {
+      cursor: pointer;
+    }
+
+    .product-image {
+      overflow: hidden;
+      background: #ddd;
+      aspect-ratio: 3 / 4;
+      margin-bottom: 18px;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.7s ease;
+    }
+
+    .product:hover img {
+      transform: scale(1.04);
+    }
+
+    .product-info {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .product-name {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+    }
+
+    .product-type {
+      color: #777;
+      font-size: 0.75rem;
+      margin-top: 5px;
+    }
+
+    /* STATEMENT */
+
+    .statement {
+      background: #111;
+      color: white;
+      min-height: 75vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .statement-inner {
+      max-width: 1100px;
+    }
+
+    .statement small {
+      display: block;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 35px;
+    }
+
+    .statement h2 {
+      font-size: clamp(3rem, 7vw, 7rem);
+    }
+
+    /* EDITORIAL */
+
+    .editorial {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      min-height: 750px;
+      padding: 0;
+    }
+
+    .editorial-image {
+      background:
+        url("https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1400&q=85")
+        center/cover no-repeat;
+    }
+
+    .editorial-content {
+      padding: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .editorial-content p {
+      margin: 30px 0;
+      line-height: 1.8;
+      color: #555;
+      max-width: 500px;
+    }
+
+    .text-link {
+      width: fit-content;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-bottom: 1px solid;
+      padding-bottom: 5px;
+    }
+
+    /* NEWSLETTER */
+
+    .newsletter {
+      text-align: center;
+      background: #dedbd4;
+    }
+
+    .newsletter p {
+      margin: 25px auto 40px;
+      max-width: 520px;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    .newsletter-form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      border-bottom: 1px solid #111;
+    }
+
+    .newsletter-form input {
+      width: 100%;
+      border: 0;
+      background: transparent;
+      padding: 18px 5px;
+      outline: none;
+      font-size: 1rem;
+    }
+
+    .newsletter-form button {
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #111;
+      color: white;
+      padding: 70px 5% 30px;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      margin-bottom: 90px;
+    }
+
+    .footer-logo {
+      font-size: clamp(3rem, 8vw, 8rem);
+      font-weight: 900;
+      letter-spacing: -5px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 70px;
+    }
+
+    .footer-links div {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer-links small {
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      font-size: 0.85rem;
+    }
+
+    .copyright {
+      padding-top: 25px;
+      border-top: 1px solid #333;
+      display: flex;
+      justify-content: space-between;
+      color: #777;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      header {
+        padding: 22px;
+      }
+
+      nav {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 20px;
+        right: 20px;
+        padding: 25px;
+        background: #111;
+        flex-direction: column;
+      }
+
+      nav.open {
+        display: flex;
+      }
+
+      .menu-button {
+        display: block;
+      }
+
+      .hero {
+        padding: 120px 22px 50px;
+      }
+
+      h1 {
+        letter-spacing: -3px;
+      }
+
+      .hero-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      section {
+        padding: 80px 22px;
+      }
+
+      .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+      .editorial {
+        grid-template-columns: 1fr;
+      }
+
+      .editorial-image {
+        min-height: 550px;
+      }
+
+      .editorial-content {
+        padding: 80px 22px;
+      }
+
+      .footer-top {
+        flex-direction: column;
+      }
+
+      .footer-links {
+        flex-wrap: wrap;
+        gap: 40px;
+      }
+
+      .copyright {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="#" class="logo">NOIR</a>
+
+  <nav id="nav">
+    <a href="#collection">Collection</a>
+    <a href="#story">Story</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <button class="menu-button" id="menuButton" aria-label="Open navigation">
+    ☰
+  </button>
+</header>
+
+
+<main>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <p class="eyebrow">New Collection — 2026</p>
+
+      <h1>
+        Break The<br>
+        Ordinary.
+      </h1>
+
+      <div class="hero-bottom">
+
+        <p class="hero-description">
+          Contemporary streetwear built around individuality,
+          simplicity and the confidence to stand apart.
+        </p>
+
+        <a href="#collection" class="button">
+          Explore Collection
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <div class="marquee">
+    <div class="marquee-content">
+      NOIR — DESIGNED FOR THE DIFFERENT — NEW COLLECTION 2026 —
+      NOIR — DESIGNED FOR THE DIFFERENT — NEW COLLECTION 2026 —
+      NOIR — DESIGNED FOR THE DIFFERENT — NEW COLLECTION 2026 —
+      NOIR — DESIGNED FOR THE DIFFERENT — NEW COLLECTION 2026 —
+    </div>
+  </div>
+
+
+  <section id="collection">
+
+    <div class="section-header">
+
+      <div>
+        <p class="section-number">01 / Collection</p>
+        <h2>Selected<br>Pieces</h2>
+      </div>
+
+      <p>
+        Minimal forms, oversized silhouettes and carefully selected
+        details. A collection designed to become part of your identity.
+      </p>
+
+    </div>
+
+
+    <div class="products">
+
+      <article class="product">
+
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80"
+            alt="Essential oversized T-shirt"
+          >
+        </div>
+
+        <div class="product-info">
+          <div>
+            <p class="product-name">Essential 01</p>
+            <p class="product-type">Oversized T-Shirt</p>
+          </div>
+          <span>€49</span>
+        </div>
+
+      </article>
+
+
+      <article class="product">
+
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=80"
+            alt="Heavyweight hoodie"
+          >
+        </div>
+
+        <div class="product-info">
+          <div>
+            <p class="product-name">Shadow 02</p>
+            <p class="product-type">Heavyweight Hoodie</p>
+          </div>
+          <span>€89</span>
+        </div>
+
+      </article>
+
+
+      <article class="product">
+
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=900&q=80"
+            alt="Structured outerwear"
+          >
+        </div>
+
+        <div class="product-info">
+          <div>
+            <p class="product-name">Form 03</p>
+            <p class="product-type">Structured Outerwear</p>
+          </div>
+          <span>€129</span>
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <section class="statement" id="story">
+
+    <div class="statement-inner">
+
+      <small>Our Philosophy</small>
+
+      <h2>
+        NOT MADE TO<br>
+        FIT IN.
+      </h2>
+
+    </div>
+
+  </section>
+
+
+  <section class="editorial">
+
+    <div class="editorial-image"></div>
+
+    <div class="editorial-content">
+
+      <p class="section-number">02 / Identity</p>
+
+      <h2>
+        Wear Your<br>
+        Identity.
+      </h2>
+
+      <p>
+        Clothing should communicate something before you say a word.
+        NOIR explores the relationship between minimalism, street culture
+        and individual expression.
+      </p>
+
+      <a href="#contact" class="text-link">
+        Discover the story →
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <section class="newsletter" id="contact">
+
+    <p class="section-number">Stay Connected</p>
+
+    <h2>
+      Join The<br>
+      Movement.
+    </h2>
+
+    <p>
+      Get access to new releases, limited collections
+      and future projects.
+    </p>
+
+    <form class="newsletter-form" id="newsletter">
+
+      <input
+        type="email"
+        placeholder="Your email address"
+        required
+      >
+
+      <button type="submit">
+        Join →
+      </button>
+
+    </form>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="footer-top">
+
+    <div class="footer-logo">
+      NOIR
+    </div>
+
+    <div class="footer-links">
+
+      <div>
+        <small>Explore</small>
+        <a href="#collection">Collection</a>
+        <a href="#story">Story</a>
+        <a href="#contact">Newsletter</a>
+      </div>
+
+      <div>
+        <small>Social</small>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">Pinterest</a>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="copyright">
+    <span>© 2026 NOIR — Concept Project</span>
+    <span>Designed & Developed by Milen Milanov</span>
+  </div>
+
+</footer>
+
+
+<script>
+
+  const menuButton = document.getElementById("menuButton");
+  const navigation = document.getElementById("nav");
+
+  menuButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
+  });
+
+
+  document.querySelectorAll("#nav a").forEach(link => {
+
+    link.addEventListener("click", () => {
+      navigation.classList.remove("open");
+    });
+
+  });
+
+
+  const newsletter = document.getElementById("newsletter");
+
+  newsletter.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const button = newsletter.querySelector("button");
+
+    button.textContent = "WELCOME ✓";
+
+    setTimeout(() => {
+      button.textContent = "JOIN →";
+      newsletter.reset();
+    }, 2500);
+
+  });
+
+</script>
+
+</body>
+</html>
