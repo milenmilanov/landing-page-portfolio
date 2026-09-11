@@ -1,91 +1,45 @@
-# Landing Page & Frontend Portfolio
-
-A collection of modern frontend projects built to showcase my skills in:
-
-- Frontend Development
-- UI/UX Design
-- Responsive Web Design
-- Landing Page Development
-- E-commerce Storefront Development
-- Custom Store Themes
-- Interactive Web Experiences
-- Conversion-focused layouts
-
-## Projects
----
+## 🚀 Featured Projects
 
 ### KŌRA — Premium E-commerce Storefront
+Interactive storefront concept focused on e-commerce UI/UX, product interactions and cart experience.
 
-A premium streetwear storefront concept built to showcase custom e-commerce UI/UX, frontend development and interactive shopping experiences.
+**Highlights:** Quick View • Size Selection • Cart Drawer • Quantity Controls • Free Shipping Progress
 
-#### Features
-
-- Responsive desktop and mobile storefront
-- Sticky navigation
-- Mobile hamburger menu
-- Product grid with hover interactions
-- Quick View modal
-- Product size selection
-- Add to Bag functionality
-- Slide-out cart drawer
-- Quantity controls
-- Remove-from-cart functionality
-- Live subtotal calculation
-- Free-shipping progress bar
-- Limited-drop product badges
-- Responsive collection sections
-- Newsletter interaction
-- Scroll reveal animations
-
-**Tech:** `HTML` `CSS` `JavaScript`
-
-🔗 [Live Demo](https://milenmilanov.github.io/landing-page-portfolio/shopify-storefront/)
-
-💻 [Source Code](./shopify-storefront/)
+🔗 [Live Demo](https://milenmilanov.github.io/landing-page-portfolio/shopify-storefront/)  
+💻 [Source Code](https://github.com/milenmilanov/landing-page-portfolio/tree/main/shopify-storefront)
 
 ---
 
 ### NEXORA — AI SaaS Landing Page
+Modern SaaS interface with dashboard UI, pricing interactions, workflow tabs and responsive frontend behavior.
 
-A modern SaaS landing page concept for an AI-powered productivity platform, focused on clean UI/UX, responsive frontend development and interactive components.
+**Highlights:** SaaS UI • Interactive Pricing • FAQ • Dashboard • Scroll Animations
 
-#### Features
-
-- Responsive desktop and mobile layout
-- Fixed glass-style navigation
-- Animated hero section
-- Interactive dashboard mockup
-- Scroll reveal animations
-- Workflow tabs
-- Monthly / yearly pricing toggle
-- FAQ accordion
-- Interactive AI demo
-- Responsive SaaS pricing cards
-
-**Tech:** `HTML` `CSS` `JavaScript`
-
-🔗 [Live Demo](https://milenmilanov.github.io/landing-page-portfolio/saas-landing-page/)
-
-💻 [Source Code](./saas-landing-page/)
+🔗 [Live Demo](https://milenmilanov.github.io/landing-page-portfolio/saas-landing-page/)  
+💻 [Source Code](https://github.com/milenmilanov/landing-page-portfolio/tree/main/saas-landing-page)
 
 ---
 
 ### NOIR — Fashion Landing Page
+Editorial fashion landing page focused on strong visual hierarchy and responsive UI.
 
-A premium fashion/streetwear landing page concept focused on strong visual hierarchy, responsive design and modern frontend interactions.
+**Highlights:** Responsive Design • Product Showcase • Mobile Navigation • Editorial UI
 
-#### Features
-
-- Responsive desktop and mobile layout
-- Custom navigation
-- Smooth scrolling
-- Product showcase
-- Editorial storytelling section
-- Newsletter interaction
-- Hover effects and UI animations
+🔗 [Live Demo](https://milenmilanov.github.io/landing-page-portfolio/fashion-landing-page/)  
+💻 [Source Code](https://github.com/milenmilanov/landing-page-portfolio/tree/main/fashion-landing-page)
 
 **Tech:** `HTML` `CSS` `JavaScript`
 
 🔗 [Live Demo](https://milenmilanov.github.io/landing-page-portfolio/fashion-landing-page/)
 
 💻 [Source Code](./fashion-landing-page/)
+
+
+## ⚡ What I Do
+
+- Frontend Development
+- Landing Page Development
+- UI/UX Design
+- Shopify & E-commerce
+- Custom Storefront Themes
+- Responsive Web Experiences
