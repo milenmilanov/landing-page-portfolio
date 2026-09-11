@@ -30,9 +30,6 @@ Editorial fashion landing page focused on strong visual hierarchy and responsive
 
 **Tech:** `HTML` `CSS` `JavaScript`
 
-🔗 [Live Demo](https://milenmilanov.github.io/landing-page-portfolio/fashion-landing-page/)
-
-💻 [Source Code](./fashion-landing-page/)
 
 
 ## ⚡ What I Do
