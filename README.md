@@ -42,6 +42,7 @@ A premium streetwear storefront concept built to showcase custom e-commerce UI/U
 🔗 [Live Demo](https://milenmilanov.github.io/landing-page-portfolio/shopify-storefront/)
 
 💻 [Source Code](./shopify-storefront/)
+
 ---
 
 ### NEXORA — AI SaaS Landing Page
@@ -67,6 +68,7 @@ A modern SaaS landing page concept for an AI-powered productivity platform, focu
 
 💻 [Source Code](./saas-landing-page/)
 
+---
 
 ### NOIR — Fashion Landing Page
 
