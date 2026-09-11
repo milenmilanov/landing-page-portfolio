@@ -5,6 +5,8 @@ Interactive storefront concept focused on e-commerce UI/UX, product interactions
 
 **Highlights:** Quick View • Size Selection • Cart Drawer • Quantity Controls • Free Shipping Progress
 
+![KŌRA — Premium E-commerce Storefront](assets/kora-preview.png)
+
 🔗 [Live Demo](https://milenmilanov.github.io/landing-page-portfolio/shopify-storefront/)  
 💻 [Source Code](https://github.com/milenmilanov/landing-page-portfolio/tree/main/shopify-storefront)
 
