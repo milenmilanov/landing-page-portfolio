@@ -1,15 +1,47 @@
-# Landing Page Portfolio
+# Landing Page & Frontend Portfolio
 
-A collection of modern landing pages built to showcase my skills in:
+A collection of modern frontend projects built to showcase my skills in:
 
 - Frontend Development
 - UI/UX Design
-- Responsive Design
+- Responsive Web Design
 - Landing Page Development
+- E-commerce Storefront Development
+- Custom Store Themes
+- Interactive Web Experiences
 - Conversion-focused layouts
 
 ## Projects
+---
 
+### KŌRA — Premium E-commerce Storefront
+
+A premium streetwear storefront concept built to showcase custom e-commerce UI/UX, frontend development and interactive shopping experiences.
+
+#### Features
+
+- Responsive desktop and mobile storefront
+- Sticky navigation
+- Mobile hamburger menu
+- Product grid with hover interactions
+- Quick View modal
+- Product size selection
+- Add to Bag functionality
+- Slide-out cart drawer
+- Quantity controls
+- Remove-from-cart functionality
+- Live subtotal calculation
+- Free-shipping progress bar
+- Limited-drop product badges
+- Responsive collection sections
+- Newsletter interaction
+- Scroll reveal animations
+
+**Tech:** `HTML` `CSS` `JavaScript`
+
+🔗 [Live Demo](https://milenmilanov.github.io/landing-page-portfolio/shopify-storefront/)
+
+💻 [Source Code](./shopify-storefront/)
 ---
 
 ### NEXORA — AI SaaS Landing Page
