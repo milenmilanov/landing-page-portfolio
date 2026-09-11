@@ -29,6 +29,8 @@ Editorial fashion landing page focused on strong visual hierarchy and responsive
 
 **Highlights:** Responsive Design • Product Showcase • Mobile Navigation • Editorial UI
 
+![NOIR Preview](assets/noir-preview.png)
+
 🔗 [Live Demo](https://milenmilanov.github.io/landing-page-portfolio/fashion-landing-page/)  
 💻 [Source Code](https://github.com/milenmilanov/landing-page-portfolio/tree/main/fashion-landing-page)
 
